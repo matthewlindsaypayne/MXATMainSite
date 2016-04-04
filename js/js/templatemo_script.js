@@ -53,6 +53,18 @@ jQuery(function($) {
             $(this).blur();
             return false;
         });
+            
+        /*$('.colorbox').click(function() {
+            var imageId = $(this).data('imageId');
+            
+            var isItHidden = $('.bio[data-imageId="+imageId+"]');
+            
+            if (isItHidden == true) {
+                $('.colorbox').hide();
+                $(this).show();
+                $('.bio[data-imageId="+imageId+"]').show();
+            }
+        }) */
 		
 		var dt = window.atob('IHwgRGVzaWduOiA8YSByZWw9Im5vZm9sbG93IiBocmVmPSJodHRwOi8vd3d3LnRlbXBsYXRlbW8uY29tL3RtLTM5NS11cmJhbmljIiB0YXJnZXQ9Il9wYXJlbnQiPlVyYmFuaWM8L2E+'); // decode the string
 		var div = document.getElementById('footer-line');
@@ -77,12 +89,12 @@ jQuery(function($) {
         });
 
         //gallery light box setup
-        $('a.colorbox').colorbox({
+        /*$('a.colorbox').colorbox({
                                     rel: function(){
                                         return $(this).data('group');
 
                                     }
-        });
+        });*/
     });
 });
 
