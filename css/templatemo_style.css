@@ -53,7 +53,17 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 
 .mxatsss-top-menu .navbar-brand {
     padding: 0;
-    margin: 30px 0 0 0;
+    margin: 20px 0 0 0;
+}
+
+#mxat-logo {
+    margin-bottom: 20px;
+}
+
+#mxat-title {
+    margin-left: 20px;
+    font-size: 20px;
+    display: inline;
 }
 
 /* ------ Carousel ----- */
@@ -106,7 +116,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 
 @media (max-width: 1024px) {
     #mxatsss-carousel {
-        background: url('../images/templatemo_carousel_bg_s.jpg') no-repeat center center; 
+        background: url('../images/stanislavsky-banner.jpg') no-repeat center center; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -227,7 +237,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 }
 
 .mxatsss-service-item-header {
-    margin-left: -10px; 
+    margin-left: 0px; 
     padding: 16px 20px 20px; 
     font-weight: bold;
     display: inline-block;
@@ -411,6 +421,29 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     margin-top: 20px;
 }
 
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 5002;
+}
+
+.modal-backdrop {
+    z-index: 5001;
+}
+
+#accordion {
+    padding-bottom: 50px;
+}
+
+.application-form-column div.form-group {
+    padding-left:15px;
+	padding-right:15px;
+    color: #333333;
+}
+
 #mxatsss-contact {
 	margin-top:100px; 
 	border-top: 1px solid #cccccc; 
@@ -455,6 +488,10 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     margin-bottom: 5px;
 }
 
+#lesley-logo {
+    margin-top: 33px;
+}
+
 .mxatsss-footer {
 	border-top: 2px solid #cccccc; 
 	margin-top: 100px;
@@ -481,50 +518,6 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 
 a:hover .social-icon-fb {
     background: url('../images/social-icon-fb-over.png') no-repeat;
-}
-
-.social-icon-rss {
-    background: url('../images/social-icon-rss.png') no-repeat;
-    width: 42px;
-    height: 42px;
-    display: block;
-}
-
-a:hover .social-icon-rss {
-    background: url('../images/social-icon-rss-over.png') no-repeat;
-}
-
-.social-icon-twitter {
-    background: url('../images/social-icon-twitter.png') no-repeat;
-    width: 42px;
-    height: 42px;
-    display: block;
-}
-
-a:hover .social-icon-twitter {
-    background: url('../images/social-icon-twitter-over.png') no-repeat;
-}
-
-.social-icon-linkedin {
-    background: url('../images/social-icon-linkedin.png') no-repeat;
-    width: 42px;
-    height: 42px;
-    display: block;
-}
-
-a:hover .social-icon-linkedin {
-    background: url('../images/social-icon-linkedin-over.png') no-repeat;
-}
-
-.social-icon-dribbble {
-    background: url('../images/social-icon-dribbble.png') no-repeat;
-    width: 42px;
-    height: 42px;
-    display: block;
-}
-
-a:hover .social-icon-dribbble {
-    background: url('../images/social-icon-dribbble-over.png') no-repeat;
 }
 
 ul.mxatsss-project-gallery  li  a img:hover {
