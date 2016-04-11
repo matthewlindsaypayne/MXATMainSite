@@ -41,6 +41,18 @@ jQuery(function($) {
             e.preventDefault();
             scrollTo('#mxatsss-contact');
         });
+            
+        // scroll to news
+        $('#btn-to-news').click(function(e) {
+            e.preventDefault();
+            scrollTo('#mxatsss-news')
+        })
+        
+        // scroll to portfolio
+        $('#btn-to-portfolio').click(function(e) {
+            e.preventDefault();
+            scrollTo('#mxatsss-portfolio')
+        })
 
         // scroll to specific id when click on menu
         $('.mxatsss-top-menu .navbar-nav a').click(function(e){
@@ -75,12 +87,12 @@ jQuery(function($) {
         $('.mxatsss-top-menu ').stickUp();
 
         // gallery category
-        $('.mxatsss-gallery-category a').click(function(e){
+        $('.mxatsss-faculty-category a').click(function(e){
             e.preventDefault(); 
             $(this).parent().children('a').removeClass('active');
             $(this).addClass('active');
             var linkClass = $(this).attr('href');
-            $('.gallery').each(function(){
+            $('.faculty').each(function(){
                 if($(this).is(":visible") == true){
                    $(this).hide();
                 };

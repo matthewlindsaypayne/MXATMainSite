@@ -11,7 +11,7 @@ body, html { overflow-x:hidden; }
 body {
     background-color: #ffffff;
     font-family:  'Open Sans', Arial, Helvetice Neue, sans-serif;
-    font-size: 12px;
+    font-size: 20px;
 	
 	font-weight: 300; 
 	font-style: normal; 
@@ -81,6 +81,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 
 #mxatsss-carousel .carousel-caption {
     z-index: 10;
+    transform: translateY(50%);
 }
 
 #mxatsss-carousel .item {
@@ -159,36 +160,22 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     font-weight: lighter; 
     text-align: justify; 
     margin-top: 25px;
-    font-size: 14px;
-    color: #929292;
+    font-size: 20px;
+    color: #333333;
 }
 
 .subheader {
     font-family: 'Open Sans', sans-serif;
     font-weight: normal;
     margin-top: 12px;
-    font-size: 12px;
-    color: #900000;
+    font-size: 20px;
+    color: #004643;
 }
 
-
-.btn-crimson {
-    background-color: #cc033c;
-    border-bottom:2px solid #900000;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-    color:#ffffff;
-}
-
-.btn-crimson:hover, .btn-crimson:focus, .btn-crimson:active, .btn-crimson.active, .open .dropdown-toggle.btn-crimson {
-    background-color: #900000;
-    color:#ffffff;
-}
 
 .btn-green {
-    background-color:#2ecc71;
-    border-bottom:2px solid #27ae60;
+    background-color: #004643;
+    border-bottom:2px solid #004643;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
@@ -196,7 +183,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 }
 
 .btn-green:hover, .btn-green:focus, .btn-green:active, .btn-green.active, .open .dropdown-toggle.btn-green {
-    background-color: #27ae60;
+    background-color: #002321;
     color:#ffffff;
 }
 
@@ -206,19 +193,20 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 
 .nav > li > a:hover,
 .nav > li > a:focus {
-    background-color: #cc033c;
+    background-color: #004643;
     color:#fff;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    background-color: #cc033c;
+    background-color: #004643;
     color:#fff;
 }
 
 
 .nav > li > a {
-    color: #929292;
+    color: #004643;
+    font-size: 14px;
 }
 .navbar-default {
     background-color:#fff;
@@ -228,7 +216,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    background-color: #cc033c;
+    background-color: #004643;
     color:#fff;
 }
 
@@ -243,8 +231,8 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     display: inline-block;
 }
 
-.mxatsss-header-crimson {
-    background-color:#cc033c;
+.mxatsss-header-green {
+    background-color:#004643;
     min-width: 298px;
     height: 67px;
     color: #fff; 
@@ -271,7 +259,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 }
 
 .mxatsss-team {
-    background: url('../images/background.png') ; 
+    background-color: #004643; 
     font-family:  'Open Sans', sans-serif;
     min-height:590px;
     color:#ffffff;
@@ -325,7 +313,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 
 .team-inner-subtext {
     font-weight:normal;
-    font-size:12px;
+    font-size:20px;
 }
 
 .row_team {
@@ -337,7 +325,11 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     list-style: none;
 }
 
-.mxatsss-project-box {
+.mxatsss-btn-read-more {
+    font-size: 12px;
+}
+
+.mxatsss-gallery-box {
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -346,15 +338,55 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     width: 200px;
 }
 
-.mxatsss-project-box:hover .project-overlay {
+.mxatsss-gallery-box:hover .gallery-overlay {
     transition: all 0.3s ease-in-out 0s;
     visibility: visible;
     opacity: 1;
 }
 
-.project-overlay {
+.gallery-overlay {
     background : rgba(0,0,0,.75);
-    border : 2px solid #cc033c;
+    border : 2px solid #004643;
+    visibility: hidden;
+    position: absolute;
+    text-align:center;
+    padding-top:80px;
+    color: #ffffff;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+
+
+.gallery-overlay hr {
+    width : 70%;
+	
+}
+
+.mxatsss-project-gallery li {
+    margin:15px;
+}
+
+.mxatsss-faculty-box {
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    cursor:pointer;
+    height: 200px;
+    width: 200px;
+}
+
+.mxatsss-faculty-box:hover .faculty-overlay {
+    transition: all 0.3s ease-in-out 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+.faculty-overlay {
+    background : rgba(0,0,0,.75);
+    border : 2px solid #004643;
     visibility: hidden;
     position: absolute;
     text-align:center;
@@ -368,12 +400,12 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 }
 
 
-.project-overlay hr {
+.faculty-overlay hr {
     width : 70%;
 	
 }
 
-.mxatsss-project-gallery li {
+.mxatsss-project-faculty li {
     margin:15px;
 }
 
@@ -381,12 +413,12 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     color: #333333;
 }
 
-.txt_crimson {
-    color: #900000;
+.txt_green {
+    color: #004643;
 }
 
 .txt_slogan {
-    font-size:14px; 
+    font-size:20px; 
     color:#929292;
 }
 
@@ -416,8 +448,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 }
 
 .blog_text {
-    text-align: justify; 
-    font-size: 14px; 
+    font-size: 20px; 
     margin-top: 20px;
 }
 
@@ -434,6 +465,20 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     z-index: 5001;
 }
 
+.gallery .modal-body img {
+    padding: 20px;
+}
+
+.faculty .modal-body img {
+    padding: 20px;
+    max-height: 250px;
+    max-width: 250px;
+}
+
+.modal-body p {
+    text-align: left;
+}
+
 #accordion {
     padding-bottom: 50px;
 }
@@ -447,7 +492,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 #mxatsss-contact {
 	margin-top:100px; 
 	border-top: 1px solid #cccccc; 
-	font-size:14px;
+	font-size:20px;
 }
 .mxatsss-contact-map {
     margin-bottom: 15px;
@@ -475,8 +520,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 }
 
 .twitter_user {
-	color: #FFFF33; 
-	font-size: 14px;
+	font-size: 20px;
 	float: right;
 }
 
@@ -505,7 +549,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 .footer_bottom_content {
 	margin: auto;
 	margin-bottom: 30px;
-	font-size: 14px;
+	font-size: 20px;
 	color:#333333;
 }
 
@@ -520,32 +564,33 @@ a:hover .social-icon-fb {
     background: url('../images/social-icon-fb-over.png') no-repeat;
 }
 
-ul.mxatsss-project-gallery  li  a img:hover {
-    border: 3px solid #cc033c;
+ul.mxatsss-project-faculty  li  a img:hover {
+    border: 3px solid #004643;
 }
 
-.mxatsss-gallery-category a {
+.mxatsss-faculty-category a {
 	color:#333333; 
 }
 
 .mxatsss-gallery-category a.active {
-	color:#900000; 
+	color:#004643; 
 	text-decoration:none;
 }
 
 .mxatsss-gallery-category a:focus {
-	color:#900000;
+	color:#004643;
 	text-decoration:none;	
 }
 
 .mxatsss-gallery-category a:hover {
-	color:#900000; 
+	color:#004643; 
 	text-decoration:none;
 }
 
-.link_crimson:hover {
+.link_green:hover {
     text-decoration:none;
 }
+
 .mxatsss-project-gallery {         
     margin:0 0 0 0;
     margin-top:30px;
@@ -559,13 +604,33 @@ ul.mxatsss-project-gallery  li  a img:hover {
   cursor: pointer;
 }
 
+.mxatsss-project-faculty {         
+    margin:0 0 0 0;
+    margin-top:30px;
+    margin-left: -40px;
+}
+.mxatsss-project-faculty li {     
+    list-style:none;
+    margin-bottom:25px;           
+}
+.mxatsss-project-faculty li img {
+  cursor: pointer;
+}
+
 .mxatsss-tweets {
-    background-color: #8996a0;
     min-height:200px;
     font-family:  'Open Sans', sans-serif;
     font-size:20px;
     color:#ffffff;
     margin-top:100px;
+}
+
+.tweet-main {
+    background-color: #004643;
+}
+
+.tweet-alternate {
+    background-color: #2C054E;
 }
 
 .form-control {
@@ -588,7 +653,11 @@ ul.mxatsss-project-gallery  li  a img:hover {
 }
 
 @media (min-width:991px) and (max-width:1200px) {
-    .mxatsss-project-box, .project-overlay {
+    #mxat-title {
+        display: none;
+    }
+    
+    .mxatsss-gallery-box, .gallery-overlay {
         height:170px;
         width:170px;
     }
@@ -596,12 +665,21 @@ ul.mxatsss-project-gallery  li  a img:hover {
     .mxatsss-project-gallery {
         margin-left: -70px;
     }
+    
+    .mxatsss-faculty-box, .faculty-overlay {
+        height:170px;
+        width:170px;
+    }
+
+    .mxatsss-project-faculty {
+        margin-left: -70px;
+    }
 
     .mxatsss-service-item-header {
         padding: 16px 10px 20px;
     }
 
-    .mxatsss-header-crimson {
+    .mxatsss-header-green {
         min-width: 230px;
     }
 
@@ -627,16 +705,31 @@ ul.mxatsss-project-gallery  li  a img:hover {
 
 
 @media (min-width:768px) and (max-width:990px) {
+    #mxat-title {
+        display: none;
+    }
+    
     .member-thumb .thumb-overlay {
         padding-left: 30%;
     }
-    .mxatsss-project-box , .project-overlay {
+    
+    .mxatsss-gallery-box , .gallery-overlay {
        height:130px;
        width:130px;
        padding-top: 0px;
     }
 
     .mxatsss-project-gallery {
+       margin-left: 10px; 
+    }
+    
+    .mxatsss-faculty-box , .faculty-overlay {
+       height:130px;
+       width:130px;
+       padding-top: 0px;
+    }
+
+    .mxatsss-project-faculty {
        margin-left: 10px; 
     }
 
@@ -654,6 +747,10 @@ ul.mxatsss-project-gallery  li  a img:hover {
 }
 
 @media (max-width: 768px) {
+    #mxat-title {
+        display: none;
+    }
+    
     .member-thumb .thumb-overlay {
         padding-left: 40%;
        
@@ -665,6 +762,14 @@ ul.mxatsss-project-gallery  li  a img:hover {
 }
 
 @media (max-width: 380px) {
+    #mxat-title {
+        display: none;
+    }
+    
+    #email {
+        display: none;
+    }
+    
     .member-thumb .thumb-overlay {
             padding-left: 30%;
 
@@ -674,7 +779,7 @@ ul.mxatsss-project-gallery  li  a img:hover {
 		
 		padding: 23px 10px 22px;
 	}
-	.mxatsss-header-crimson {
+	.mxatsss-header-green {
 		min-width: 0px;
 	}
 	
