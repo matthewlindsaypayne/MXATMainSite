@@ -13,49 +13,49 @@ jQuery(function($) {
             'callback=initialize';
         document.body.appendChild(script);
 
-        top_menu_height = $('.mxatsss-top-menu').height();
+        top_menu_height = $('.sss-top-menu').height();
         // scroll spy to auto active the nav item
-        $('body').scrollspy({ target: '#mxatsss-nav-bar', offset: top_menu_height + 10 });
+        $('body').scrollspy({ target: '#sss-nav-bar', offset: top_menu_height + 10 });
 		$('.external-link').unbind('click');
 
         // scroll to top
         $('#btn-back-to-top').click(function(e){
             e.preventDefault();
-            scrollTo('#mxatsss-top');
+            scrollTo('#sss-carousel');
         });
             
         // scroll to faculty
         $('#btn-to-faculty').click(function(e){
             e.preventDefault();
-            scrollTo('#mxatsss-faculty');
+            scrollTo('#sss-faculty');
         });
             
         // scroll to history
         $('#btn-to-history').click(function(e){
             e.preventDefault();
-            scrollTo('#mxatsss-history');
+            scrollTo('#sss-history');
         });
             
         // scroll to contact
         $('#btn-to-contact').click(function(e){
             e.preventDefault();
-            scrollTo('#mxatsss-contact');
+            scrollTo('#sss-contact');
         });
             
         // scroll to news
         $('#btn-to-news').click(function(e) {
             e.preventDefault();
-            scrollTo('#mxatsss-news')
+            scrollTo('#sss-news')
         })
         
-        // scroll to portfolio
-        $('#btn-to-portfolio').click(function(e) {
+        // scroll to gallery
+        $('#btn-to-gallery').click(function(e) {
             e.preventDefault();
-            scrollTo('#mxatsss-portfolio')
+            scrollTo('#sss-gallery')
         })
 
         // scroll to specific id when click on menu
-        $('.mxatsss-top-menu .navbar-nav a').click(function(e){
+        $('.sss-top-menu .navbar-nav a').click(function(e){
             e.preventDefault(); 
             var linkId = $(this).attr('href');
             scrollTo(linkId);
@@ -84,10 +84,10 @@ jQuery(function($) {
 		div.innerHTML = div.innerHTML + dt;
 
         // to stick navbar on top
-        $('.mxatsss-top-menu ').stickUp();
+        $('.sss-top-menu ').stickUp();
 
         // gallery category
-        $('.mxatsss-faculty-category a').click(function(e){
+        $('.sss-faculty-category a').click(function(e){
             e.preventDefault(); 
             $(this).parent().children('a').removeClass('active');
             $(this).addClass('active');
@@ -101,12 +101,29 @@ jQuery(function($) {
         });
 
         //gallery light box setup
-        /*$('a.colorbox').colorbox({
+        $('a.colorbox').colorbox({
                                     rel: function(){
                                         return $(this).data('group');
 
                                     }
-        });*/
+        });
+            
+        //history toggling setup
+        $('.read-collapsed').click(function () {
+            var thisButton = $(this);
+            var expansionName = thisButton.data("target");
+            
+            if (thisButton.text() == "READ MORE") {
+                $('.sss-history-item').hide();
+                thisButton.parent().parent().show();
+                thisButton.text("CLOSE");
+                $(expansionName).show();
+            } else if (thisButton.text() == "CLOSE") {
+                $('.sss-history-item').show();
+                thisButton.text("READ MORE");
+                $(expansionName).hide();
+            }
+        })
     });
 });
 

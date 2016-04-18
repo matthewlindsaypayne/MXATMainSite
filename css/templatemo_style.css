@@ -13,7 +13,7 @@ body {
     font-family:  'Open Sans', Arial, Helvetice Neue, sans-serif;
     font-size: 20px;
 	
-	font-weight: 300; 
+	font-weight: 500; 
 	font-style: normal; 
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
           border-radius: 0 !important;
 }
 
-.mxatsss_clear {
+.sss_clear {
 	clear: both;
 }
 
@@ -35,23 +35,23 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 	height: 30px;
 }
 
-.mxatsss-top-bar {
+.sss-top-bar {
     min-height: 40px;
     background-color:#eeeeee;
 }
 
-.mxatsss-top-menu {
+.sss-top-menu {
     min-height:110px;
     background-color:#ffffff;
     z-index: 5000;
     width:100%;
 }
 
-.mxatsss-top-menu .navbar-toggle {
+.sss-top-menu .navbar-toggle {
     margin-top: 38px;
 }
 
-.mxatsss-top-menu .navbar-brand {
+.sss-top-menu .navbar-brand {
     padding: 0;
     margin: 20px 0 0 0;
 }
@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 
 /* ------ Carousel ----- */
 
-#mxatsss-carousel {
+#sss-carousel {
     background: url('../images/stanislavsky-banner.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -79,15 +79,15 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     height: 500px;
 }
 
-#mxatsss-carousel .carousel-caption {
+#sss-carousel .carousel-caption {
     z-index: 10;
     transform: translateY(50%);
 }
 
-#mxatsss-carousel .item {
+#sss-carousel .item {
     height: 500px;
 }
-#mxatsss-carousel .carousel-inner > .item > img {
+#sss-carousel .carousel-inner > .item > img {
     position: absolute;
     min-width: 100%;
     height: 500px;
@@ -96,13 +96,13 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 }
 
 @media (min-width: 768px) {
-    #mxatsss-carousel .carousel-caption p {
+    #sss-carousel .carousel-caption p {
         margin-bottom: 20px;
         line-height: 1.4;
         font-size: 21px;
     }
 
-    #mxatsss-carousel .carousel-caption {
+    #sss-carousel .carousel-caption {
         padding-bottom: 140px;
         right: 20%;
         left: 20%;
@@ -110,13 +110,13 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 }
 
 @media (max-width: 768px) {
-    #mxatsss-carousel .carousel-caption {
+    #sss-carousel .carousel-caption {
         padding-bottom: 120px;
     }
 }
 
 @media (max-width: 1024px) {
-    #mxatsss-carousel {
+    #sss-carousel {
         background: url('../images/stanislavsky-banner.jpg') no-repeat center center; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -131,12 +131,12 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 /* ------ End of Carousel ----- */
 
 /* ------ Welcome & Slogna ------ */
-.mxatsss-welcome {
+.sss-welcome {
     border-bottom: 1px solid #cccccc;
     min-height: 230px;
 }
 
-.mxatsss-slogan {
+.sss-slogan {
     font-family:  'Open Sans', sans-serif;
     font-weight: normal;
     font-size: 42px;
@@ -144,19 +144,44 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     color: #333333;
 }
 
-.mxatsss-service {
+.sss-history {
     margin-bottom: 100px;
     margin-top: 100px;
 }
 
-.mxatsss-service-item {
+.sss-history-item {
     font-family:  'Open Sans', sans-serif;
     margin-bottom: 10px;
     font-size: 20px;
 }
 
 
-.mxatsss-service-item p {
+.sss-history-item p {
+    text-align: left; 
+    margin-top: 25px;
+    font-size: 20px;
+    color: #333333;
+}
+
+.history-collapse {
+    text-align: left; 
+    font-size: 20px;
+    color: #333333;
+}
+
+.sss-programs {
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.sss-programs-item {
+    font-family:  'Open Sans', sans-serif;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+
+.sss-programs-item p {
     font-weight: lighter; 
     text-align: justify; 
     margin-top: 25px;
@@ -224,14 +249,21 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     margin-bottom: 0px;
 }
 
-.mxatsss-service-item-header {
+.sss-history-item-header {
     margin-left: 0px; 
     padding: 16px 20px 20px; 
     font-weight: bold;
     display: inline-block;
 }
 
-.mxatsss-header-green {
+.sss-programs-item-header {
+    margin-left: 0px; 
+    padding: 16px 20px 20px; 
+    font-weight: bold;
+    display: inline-block;
+}
+
+.sss-header-green {
     background-color:#004643;
     min-width: 298px;
     height: 67px;
@@ -258,14 +290,15 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     border: 1px solid #cccccc; 
 }
 
-.mxatsss-team {
+#sss-apply {
     background-color: #004643; 
     font-family:  'Open Sans', sans-serif;
     min-height:590px;
     color:#ffffff;
+    padding-bottom: 40px;
 
 }
-.mxatsss-line-header {
+.sss-line-header {
     margin-top:100px;
     margin-bottom:80px;
 }
@@ -325,11 +358,11 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     list-style: none;
 }
 
-.mxatsss-btn-read-more {
+.sss-btn-read-more {
     font-size: 12px;
 }
 
-.mxatsss-gallery-box {
+.sss-gallery-box {
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -338,7 +371,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     width: 200px;
 }
 
-.mxatsss-gallery-box:hover .gallery-overlay {
+.sss-gallery-box:hover .gallery-overlay {
     transition: all 0.3s ease-in-out 0s;
     visibility: visible;
     opacity: 1;
@@ -365,11 +398,11 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 	
 }
 
-.mxatsss-project-gallery li {
+.sss-project-gallery li {
     margin:15px;
 }
 
-.mxatsss-faculty-box {
+.sss-faculty-box {
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -378,7 +411,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     width: 200px;
 }
 
-.mxatsss-faculty-box:hover .faculty-overlay {
+.sss-faculty-box:hover .faculty-overlay {
     transition: all 0.3s ease-in-out 0s;
     visibility: visible;
     opacity: 1;
@@ -405,7 +438,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 	
 }
 
-.mxatsss-project-faculty li {
+.sss-project-faculty li {
     margin:15px;
 }
 
@@ -417,12 +450,16 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     color: #004643;
 }
 
+.txt_violet {
+    color: #2C054E;
+}
+
 .txt_slogan {
     font-size:20px; 
     color:#929292;
 }
 
-.mxatsss-line-header span {
+.sss-line-header span {
     font-size: 18px; 
     float :left; 
     margin-top: 10px;
@@ -433,21 +470,21 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     padding-top: 100px;
 }
 
-.span_blog {
+.span_news {
     margin-bottom: 80px;
 }
 
-.blog_post {
+.news_post {
     color: #333333; 
     padding: 10px;
 }
 
-.blog_header {
+.news_header {
     font-weight: bold; 
     font-size: 16px; 
 }
 
-.blog_text {
+.news_text {
     font-size: 20px; 
     margin-top: 20px;
 }
@@ -489,12 +526,36 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     color: #333333;
 }
 
-#mxatsss-contact {
+form div {
+    padding-left:15px;
+	padding-right:15px;
+    color: #333333;
+}
+
+.enrollment-contract-column label {
+    padding-left:15px;
+	padding-right:15px;
+    color: #333333;
+}
+
+form div.row {
+    padding-left:15px;
+	padding-right:15px;
+    color: #333333;
+}
+
+.enrollment-contract-column div.form-group p {
+    padding-left:15px;
+	padding-right:15px;
+    color: #333333;
+}
+
+#sss-contact {
 	margin-top:100px; 
 	border-top: 1px solid #cccccc; 
 	font-size:20px;
 }
-.mxatsss-contact-map {
+.sss-contact-map {
     margin-bottom: 15px;
     height: 378px;
 
@@ -524,11 +585,11 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 	float: right;
 }
 
-.mxatsss-partners {
+.sss-partners {
 	border-top: 2px solid #cccccc;
 }
 
-.mxatsss-partners .mxatsss-partner-item {
+.sss-partners .sss-partner-item {
     margin-bottom: 5px;
 }
 
@@ -536,7 +597,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     margin-top: 33px;
 }
 
-.mxatsss-footer {
+.sss-footer {
 	border-top: 2px solid #cccccc; 
 	margin-top: 100px;
 }
@@ -564,25 +625,25 @@ a:hover .social-icon-fb {
     background: url('../images/social-icon-fb-over.png') no-repeat;
 }
 
-ul.mxatsss-project-faculty  li  a img:hover {
+ul.sss-project-faculty  li  a img:hover {
     border: 3px solid #004643;
 }
 
-.mxatsss-faculty-category a {
+.sss-faculty-category a {
 	color:#333333; 
 }
 
-.mxatsss-gallery-category a.active {
+.sss-gallery-category a.active {
 	color:#004643; 
 	text-decoration:none;
 }
 
-.mxatsss-gallery-category a:focus {
+.sss-gallery-category a:focus {
 	color:#004643;
 	text-decoration:none;	
 }
 
-.mxatsss-gallery-category a:hover {
+.sss-gallery-category a:hover {
 	color:#004643; 
 	text-decoration:none;
 }
@@ -591,45 +652,38 @@ ul.mxatsss-project-faculty  li  a img:hover {
     text-decoration:none;
 }
 
-.mxatsss-project-gallery {         
+.sss-project-gallery {         
     margin:0 0 0 0;
     margin-top:30px;
     margin-left: -40px;
 }
-.mxatsss-project-gallery li {     
+.sss-project-gallery li {     
     list-style:none;
     margin-bottom:25px;           
 }
-.mxatsss-project-gallery li img {
+.sss-project-gallery li img {
   cursor: pointer;
 }
 
-.mxatsss-project-faculty {         
+.sss-project-faculty {         
     margin:0 0 0 0;
     margin-top:30px;
     margin-left: -40px;
 }
-.mxatsss-project-faculty li {     
+.sss-project-faculty li {     
     list-style:none;
     margin-bottom:25px;           
 }
-.mxatsss-project-faculty li img {
+.sss-project-faculty li img {
   cursor: pointer;
 }
 
-.mxatsss-tweets {
+.sss-tweets {
     min-height:200px;
     font-family:  'Open Sans', sans-serif;
     font-size:20px;
     color:#ffffff;
     margin-top:100px;
-}
-
-.tweet-main {
-    background-color: #004643;
-}
-
-.tweet-alternate {
     background-color: #2C054E;
 }
 
@@ -648,7 +702,7 @@ ul.mxatsss-project-faculty  li  a img:hover {
 	margin-bottom:80px;
 }
 
-.blog_box {
+.news_box {
 	margin-left: -12px;
 }
 
@@ -657,29 +711,33 @@ ul.mxatsss-project-faculty  li  a img:hover {
         display: none;
     }
     
-    .mxatsss-gallery-box, .gallery-overlay {
+    .sss-gallery-box, .gallery-overlay {
         height:170px;
         width:170px;
     }
 
-    .mxatsss-project-gallery {
+    .sss-project-gallery {
         margin-left: -70px;
     }
     
-    .mxatsss-faculty-box, .faculty-overlay {
+    .sss-faculty-box, .faculty-overlay {
         height:170px;
         width:170px;
     }
 
-    .mxatsss-project-faculty {
+    .sss-project-faculty {
         margin-left: -70px;
     }
 
-    .mxatsss-service-item-header {
+    .sss-history-item-header {
+        padding: 16px 10px 20px;
+    }
+    
+    .sss-programs-item-header {
         padding: 16px 10px 20px;
     }
 
-    .mxatsss-header-green {
+    .sss-header-green {
         min-width: 230px;
     }
 
@@ -697,7 +755,7 @@ ul.mxatsss-project-faculty  li  a img:hover {
         margin-bottom: 20px;
     }
 	
-    .mxatsss-btn-read-more {
+    .sss-btn-read-more {
         float:right;
         margin-bottom :40px; 
     }
@@ -713,27 +771,27 @@ ul.mxatsss-project-faculty  li  a img:hover {
         padding-left: 30%;
     }
     
-    .mxatsss-gallery-box , .gallery-overlay {
+    .sss-gallery-box , .gallery-overlay {
        height:130px;
        width:130px;
        padding-top: 0px;
     }
 
-    .mxatsss-project-gallery {
+    .sss-project-gallery {
        margin-left: 10px; 
     }
     
-    .mxatsss-faculty-box , .faculty-overlay {
+    .sss-faculty-box , .faculty-overlay {
        height:130px;
        width:130px;
        padding-top: 0px;
     }
 
-    .mxatsss-project-faculty {
+    .sss-project-faculty {
        margin-left: 10px; 
     }
 
-    .blog_box{
+    .news_box{
        margin-right: -140px;
     }
 }
@@ -755,7 +813,7 @@ ul.mxatsss-project-faculty  li  a img:hover {
         padding-left: 40%;
        
     }
-    .mxatsss-btn-read-more {
+    .sss-btn-read-more {
             float:right;
             margin-bottom :40px; 
       }
@@ -774,12 +832,17 @@ ul.mxatsss-project-faculty  li  a img:hover {
             padding-left: 30%;
 
     }
-	.mxatsss-service-item-header {
+	.sss-history-item-header {
 		font-size: 16px;
 		
 		padding: 23px 10px 22px;
 	}
-	.mxatsss-header-green {
+    .sss-programs-item-header {
+		font-size: 16px;
+		
+		padding: 23px 10px 22px;
+	}
+	.sss-header-green {
 		min-width: 0px;
 	}
 	
